@@ -1,4 +1,5 @@
-
+const cityHeader = require('./wheather/cityHeader');
+const cityPicker = require('./wheather/cityPicker');
 
 describe('Wheather', function() {
     it('has switching correctly - Warszawa', function() {
@@ -11,7 +12,6 @@ describe('Wheather', function() {
     })
 })
 
-
 describe('Wheather', function() {
     it('has switching correctly - Bialystok', function() {
 
@@ -20,17 +20,7 @@ describe('Wheather', function() {
 
         element(by.className('hideMin')).click();
 
-        browser.findElement(By.xpath("//*[@id=\"miasta\"]/ul/li[1]/a")).click();
-
-        // browser.findElement(By.id('pogoda'))
-        // findElement(By.xpath("ul/li[1]/a")).getText()
-        // findElementByID("pogoda").getHeaderText();
-        // finSelectedCity()
-
-        expect(browser.findElement(By.xpath("//*[@id=\"pogoda\"]/h3")).getText()).toBe('Wybrana lokalizacja: Białystok');
+        cityPicker.bialystok().click();
+        expect(cityHeader.bialystok().getText()).toBe('Wybrana lokalizacja: Białystok');
     })
 })
-
-
-
-
