@@ -1,5 +1,5 @@
 // var whatever = require('whatever.js')
-// import whatever from 'whatever.js'
+// import whatever from 'cityHeader.js'
 
 
 describe('Login Page', function() {
@@ -30,15 +30,3 @@ describe('Topic post', function() {
         expect(element(by.className('alert alert-danger')).getText()).toBe('Wszystkie dane są obowiązkowe');
     });
 });
-
-describe('Wheather', function() {
-    it('has working correctly with each city', function() {
-
-        browser.waitForAngularEnabled(false);
-        browser.get('http://niezalezna.pl');
-
-        element(by.className('hideMin')).click();
-
-        expect(element(by.id('pogoda')).getText()).toBe('Wybrana lokalizacja: Warszawa');
-    })
-})
