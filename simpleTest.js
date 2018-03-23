@@ -31,14 +31,14 @@ describe('Topic post', function() {
     });
 });
 
-describe('Wheather', function() {
-    it('has working correctly with each city', function() {
-
-        browser.waitForAngularEnabled(false);
-        browser.get('http://niezalezna.pl');
-
-        element(by.className('hideMin')).click();
-
-        expect(element(by.id('pogoda')).getText()).toBe('Wybrana lokalizacja: Warszawa');
-    })
-})
+// describe('Wheather', function() {
+//     it('has working correctly with each city', function() {
+//
+//         browser.waitForAngularEnabled(false);
+//         browser.get('http://niezalezna.pl');
+//
+//         element(by.className('hideMin')).click();
+//
+//         expect(element(by.id('pogoda')).getText()).toBe('Wybrana lokalizacja: Warszawa');
+//     })
+// })
