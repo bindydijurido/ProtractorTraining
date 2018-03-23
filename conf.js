@@ -9,7 +9,7 @@ exports.config = {
         // 'browserName': 'firefox'
     },
 
-    specs: ['todo-spec.js'],
+    specs: ['simpleTest.js'],
 
     jasmineNodeOpts: {
         showColors: true

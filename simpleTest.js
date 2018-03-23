@@ -18,8 +18,8 @@ describe('Login Page', function() {
     });
 });
 
-describe('Topic post', function () {
-    it('has empy values', function() {
+describe('Topic post', function() {
+    it('has empty values', function() {
 
         browser.waitForAngularEnabled(false);
         browser.get('http://niezalezna.pl/');
@@ -30,3 +30,15 @@ describe('Topic post', function () {
         expect(element(by.className('alert alert-danger')).getText()).toBe('Wszystkie dane są obowiązkowe');
     });
 });
+
+describe('Wheather', function() {
+    it('has working correctly with each city', function() {
+
+        browser.waitForAngularEnabled(false);
+        browser.get('http://niezalezna.pl');
+
+        element(by.className('hideMin')).click();
+
+        expect(element(by.id('pogoda')).getText()).toBe('Wybrana lokalizacja: Warszawa');
+    })
+})
