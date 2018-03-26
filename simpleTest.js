@@ -1,30 +1,20 @@
-// var whatever = require('whatever.js')
-// import whatever from 'cityHeader.js'
+const workflow = require('actions');
 
 
 describe('Login Page', function() {
     it('has wrong login&psswd', function() {
 
-        browser.waitForAngularEnabled(false);
-        browser.get('http://niezalezna.pl/');
+        workflow.goToLogin();
+        workflow.wrongPsswd();
 
-        element(by.className('menuBtn menuIconBg r15 notifyBox avatarIcon')).click();
-        element(by.id('inputEmail')).sendKeys('mail@mail.com');
-        element(by.id('inputPassword')).sendKeys('12345');
-
-        element(by.className('btn btnLogin btnFullWidth')).click();
-        // whatever.getAlertElement().click();
         expect(element(by.className('alert alert-danger')).getText()).toBe('Niepoprawny e-mail lub hasło');
     });
 });
 
-describe('Topic post', function() {
+describe('Report Topic', function() {
     it('has empty values', function() {
 
-        browser.waitForAngularEnabled(false);
-        browser.get('http://niezalezna.pl/');
-
-        element(by.className('btnAlert24 catColor')).click();
+        workflow.goToReportTopic();
         element(by.className('btn btnLogin btnFullWidth')).click();
 
         expect(element(by.className('alert alert-danger')).getText()).toBe('Wszystkie dane są obowiązkowe');
