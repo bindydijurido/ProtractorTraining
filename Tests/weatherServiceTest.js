@@ -1,6 +1,6 @@
-const cityHeader = require('./weatherUtility/cityHeader');
-const cityPicker = require('./weatherUtility/cityPicker');
-const actions = require('./actions');
+const cityHeader = require('../weatherUtility/cityHeader');
+const cityPicker = require('../weatherUtility/cityPicker');
+const actions = require('../Methods/actions');
 
 describe('Weather', function () {
     it('has switching correctly - Warszawa', function () {

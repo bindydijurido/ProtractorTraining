@@ -1,4 +1,4 @@
-const workflow = require('actions');
+const workflow = require('Methods/actions');
 
 
 describe('Login Page', function () {
