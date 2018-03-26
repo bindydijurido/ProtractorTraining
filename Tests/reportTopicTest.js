@@ -1,3 +1,5 @@
+const workflow = require('Methods/actions');
+
 describe('Report Topic', function () {
     it('with empty values', function () {
 
