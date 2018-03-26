@@ -9,8 +9,8 @@ exports.config = {
         // 'browserName': 'firefox'
     },
 
-    // specs: ['simpleTest.js', 'wheatherServiceTest.js'],
-    specs: ['wheatherServiceTest.js'],
+    // specs: ['simpleTest.js', 'weatherServiceTest.js'],
+    specs: ['weatherServiceTest.js'],
 
     jasmineNodeOpts: {
         showColors: true

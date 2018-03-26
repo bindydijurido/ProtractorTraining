@@ -1,271 +1,271 @@
-const cityHeader = require('./wheather/cityHeader');
-const cityPicker = require('./wheather/cityPicker');
-const actions = require('./wheather/actions');
+const cityHeader = require('./weather/cityHeader');
+const cityPicker = require('./weather/cityPicker');
+const actions = require('./weather/actions');
 
-describe('Wheather', function() {
+describe('Weather', function() {
     it('has switching correctly - Warszawa', function() {
 
-        actions.goToWheather();
+        actions.goToWeather();
         expect(cityHeader.getHeader().getText()).toBe('Wybrana lokalizacja: Warszawa');
     })
 })
 
-describe('Wheather', function() {
+describe('Weather', function() {
     it('has switching correctly - Bialystok', function() {
 
-        actions.goToWheather();
+        actions.goToWeather();
         cityPicker.bialystok().click();
         expect(cityHeader.getHeader().getText()).toBe('Wybrana lokalizacja: Białystok');
     })
 })
 
-describe('Wheather', function() {
+describe('Weather', function() {
     it('has switching correctly - Gdansk', function() {
 
-        actions.goToWheather();
+        actions.goToWeather();
         cityPicker.gdansk().click();
         expect(cityHeader.getHeader().getText()).toBe('Wybrana lokalizacja: Gdańsk');
     })
 })
 
-describe('Wheather', function() {
+describe('Weather', function() {
     it('has switching correctly - Kolobrzeg', function() {
 
-        actions.goToWheather();
+        actions.goToWeather();
         cityPicker.kolobrzeg().click();
         expect(cityHeader.getHeader().getText()).toBe('Wybrana lokalizacja: Kołobrzeg');
     })
 })
 
-describe('Wheather', function() {
+describe('Weather', function() {
     it('has switching correctly - Koszalin', function() {
 
-        actions.goToWheather();
+        actions.goToWeather();
         cityPicker.koszalin().click();
         expect(cityHeader.getHeader().getText()).toBe('Wybrana lokalizacja: Koszalin');
     })
 })
 
-describe('Wheather', function() {
+describe('Weather', function() {
     it('has switching correctly - Lodz', function() {
 
-        actions.goToWheather();
+        actions.goToWeather();
         cityPicker.lodz().click();
         expect(cityHeader.getHeader().getText()).toBe('Wybrana lokalizacja: Łódź');
     })
 })
 
-describe('Wheather', function() {
+describe('Weather', function() {
     it('has switching correctly - Opole', function() {
 
-        actions.goToWheather();
+        actions.goToWeather();
         cityPicker.opole().click();
         expect(cityHeader.getHeader().getText()).toBe('Wybrana lokalizacja: Opole');
     })
 })
 
-describe('Wheather', function() {
+describe('Weather', function() {
     it('has switching correctly - Rzeszow', function() {
 
-        actions.goToWheather();
+        actions.goToWeather();
         cityPicker.rzeszow().click();
         expect(cityHeader.getHeader().getText()).toBe('Wybrana lokalizacja: Rzeszów');
     })
 })
 
-describe('Wheather', function() {
+describe('Weather', function() {
     it('has switching correctly - Szczecin', function() {
 
-        actions.goToWheather();
+        actions.goToWeather();
         cityPicker.szczecin().click();
         expect(cityHeader.getHeader().getText()).toBe('Wybrana lokalizacja: Szczecin');
     })
 })
 
-describe('Wheather', function() {
+describe('Weather', function() {
     it('has switching correctly - Zakopane', function() {
 
-        actions.goToWheather();
+        actions.goToWeather();
         cityPicker.zakopane().click();
         expect(cityHeader.getHeader().getText()).toBe('Wybrana lokalizacja: Zakopane');
     })
 })
 
-describe('Wheather', function() {
+describe('Weather', function() {
     it('has switching correctly - Bydgoszcz', function() {
 
-        actions.goToWheather();
+        actions.goToWeather();
         cityPicker.bydgoszcz().click();
         expect(cityHeader.getHeader().getText()).toBe('Wybrana lokalizacja: Bydgoszcz');
     })
 })
 
-describe('Wheather', function() {
+describe('Weather', function() {
     it('has switching correctly - Gorzow Wlkp', function() {
 
-        actions.goToWheather();
-        cityPicker.rzeszow().click();
+        actions.goToWeather();
+        cityPicker.gorzow().click();
         expect(cityHeader.getHeader().getText()).toBe('Wybrana lokalizacja: Gorzów Wielkopolski');
     })
 })
 
-describe('Wheather', function() {
+describe('Weather', function() {
     it('has switching correctly - Katowice', function() {
 
-        actions.goToWheather();
+        actions.goToWeather();
         cityPicker.katowice().click();
         expect(cityHeader.getHeader().getText()).toBe('Wybrana lokalizacja: Katowice');
     })
 })
 
-describe('Wheather', function() {
+describe('Weather', function() {
     it('has switching correctly - Krakow', function() {
 
-        actions.goToWheather();
+        actions.goToWeather();
         cityPicker.krakow().click();
         expect(cityHeader.getHeader().getText()).toBe('Wybrana lokalizacja: Kraków');
     })
 })
 
-describe('Wheather', function() {
+describe('Weather', function() {
     it('has switching correctly - Lomza', function() {
 
-        actions.goToWheather();
+        actions.goToWeather();
         cityPicker.lomza().click();
         expect(cityHeader.getHeader().getText()).toBe('Wybrana lokalizacja: Łomża');
     })
 })
 
-describe('Wheather', function() {
+describe('Weather', function() {
     it('has switching correctly - Poznan', function() {
 
-        actions.goToWheather();
+        actions.goToWeather();
         cityPicker.poznan().click();
         expect(cityHeader.getHeader().getText()).toBe('Wybrana lokalizacja: Poznań');
     })
 })
 
-describe('Wheather', function() {
+describe('Weather', function() {
     it('has switching correctly - Slupsk', function() {
 
-        actions.goToWheather();
+        actions.goToWeather();
         cityPicker.slupsk().click();
         expect(cityHeader.getHeader().getText()).toBe('Wybrana lokalizacja: Słupsk');
     })
 })
 
-describe('Wheather', function() {
+describe('Weather', function() {
     it('has switching correctly - Tarnow', function() {
 
-        actions.goToWheather();
+        actions.goToWeather();
         cityPicker.tarnow().click();
         expect(cityHeader.getHeader().getText()).toBe('Wybrana lokalizacja: Tarnów');
     })
 })
 
-describe('Wheather', function() {
+describe('Weather', function() {
     it('has switching correctly - Wloclawek', function() {
 
-        actions.goToWheather();
+        actions.goToWeather();
         cityPicker.wloclawek().click();
         expect(cityHeader.getHeader().getText()).toBe('Wybrana lokalizacja: Włocławek');
     })
 })
 
-describe('Wheather', function() {
+describe('Weather', function() {
     it('has switching correctly - Zamosc', function() {
 
-        actions.goToWheather();
+        actions.goToWeather();
         cityPicker.zamosc().click();
         expect(cityHeader.getHeader().getText()).toBe('Wybrana lokalizacja: Zamość');
     })
 })
 
-describe('Wheather', function() {
+describe('Weather', function() {
     it('has switching correctly - Czestochowa', function() {
 
-        actions.goToWheather();
+        actions.goToWeather();
         cityPicker.czestochowa().click();
         expect(cityHeader.getHeader().getText()).toBe('Wybrana lokalizacja: Częstochowa');
     })
 })
 
-describe('Wheather', function() {
+describe('Weather', function() {
     it('has switching correctly - Grudziac', function() {
 
-        actions.goToWheather();
+        actions.goToWeather();
         cityPicker.grudziac().click();
         expect(cityHeader.getHeader().getText()).toBe('Wybrana lokalizacja: Grudziądz');
     })
 })
 
-describe('Wheather', function() {
+describe('Weather', function() {
     it('has switching correctly - Kielce', function() {
 
-        actions.goToWheather();
+        actions.goToWeather();
         cityPicker.kielce().click();
         expect(cityHeader.getHeader().getText()).toBe('Wybrana lokalizacja: Kielce');
     })
 })
 
-describe('Wheather', function() {
+describe('Weather', function() {
     it('has switching correctly - Lublin', function() {
 
-        actions.goToWheather();
+        actions.goToWeather();
         cityPicker.lublin().click();
         expect(cityHeader.getHeader().getText()).toBe('Wybrana lokalizacja: Lublin');
     })
 })
 
-describe('Wheather', function() {
+describe('Weather', function() {
     it('has switching correctly - Olsztyn', function() {
 
-        actions.goToWheather();
+        actions.goToWeather();
         cityPicker.olsztyn().click();
         expect(cityHeader.getHeader().getText()).toBe('Wybrana lokalizacja: Olsztyn');
     })
 })
 
-describe('Wheather', function() {
+describe('Weather', function() {
     it('has switching correctly - Radom', function() {
 
-        actions.goToWheather();
+        actions.goToWeather();
         cityPicker.radom().click();
         expect(cityHeader.getHeader().getText()).toBe('Wybrana lokalizacja: Radom');
     })
 })
 
-describe('Wheather', function() {
+describe('Weather', function() {
     it('has switching correctly - Suwalki', function() {
 
-        actions.goToWheather();
+        actions.goToWeather();
         cityPicker.suwalki().click();
         expect(cityHeader.getHeader().getText()).toBe('Wybrana lokalizacja: Suwałki');
     })
 })
 
-describe('Wheather', function() {
+describe('Weather', function() {
     it('has switching correctly - Torun', function() {
 
-        actions.goToWheather();
+        actions.goToWeather();
         cityPicker.torun().click();
         expect(cityHeader.getHeader().getText()).toBe('Wybrana lokalizacja: Toruń');
     })
 })
 
-describe('Wheather', function() {
+describe('Weather', function() {
     it('has switching correctly - Wroclaw', function() {
 
-        actions.goToWheather();
+        actions.goToWeather();
         cityPicker.wroclaw().click();
         expect(cityHeader.getHeader().getText()).toBe('Wybrana lokalizacja: Wrocław');
     })
 })
 
-describe('Wheather', function() {
+describe('Weather', function() {
     it('has switching correctly - Zielona Gora', function() {
 
-        actions.goToWheather();
+        actions.goToWeather();
         cityPicker.zielonaGora().click();
         expect(cityHeader.getHeader().getText()).toBe('Wybrana lokalizacja: Zielona Góra');
     })
