@@ -6,7 +6,6 @@ exports.config = {
 
     capabilities: {
         'browserName': 'chrome',
-        // 'browserName': 'firefox',
     },
 
     specs: ['weatherServiceTest.js'],
