@@ -6,10 +6,8 @@ exports.config = {
 
     capabilities: {
         'browserName': 'chrome',
-        // 'browserName': 'firefox'
     },
 
-    // specs: ['simpleTest.js', 'weatherServiceTest.js'],
     specs: ['weatherServiceTest.js'],
 
     jasmineNodeOpts: {
