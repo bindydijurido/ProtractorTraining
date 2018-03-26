@@ -1,18 +1,5 @@
-const workflow = require('actions');
-
-
-describe('Login Page', function() {
-    it('has wrong login&psswd', function() {
-
-        workflow.goToLogin();
-        workflow.wrongPsswd();
-
-        expect(element(by.className('alert alert-danger')).getText()).toBe('Niepoprawny e-mail lub hasło');
-    });
-});
-
-describe('Report Topic', function() {
-    it('has empty values', function() {
+describe('Report Topic', function () {
+    it('with empty values', function () {
 
         workflow.goToReportTopic();
         element(by.className('btn btnLogin btnFullWidth')).click();
@@ -20,3 +7,13 @@ describe('Report Topic', function() {
         expect(element(by.className('alert alert-danger')).getText()).toBe('Wszystkie dane są obowiązkowe');
     });
 });
+
+describe('Report Topic', function () {
+    it('with properly data', function () {
+
+        workflow.goToReportTopic();
+        workflow.reportTopicProperData();
+
+        expect(element(browser.findElement.By.xpath('//*[@id="page"]/div[1]/div/div/div/div[2]')).getText()).toBe('Wiadomość została wysłana do redakcji');
+    })
+})

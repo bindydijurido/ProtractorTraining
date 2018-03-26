@@ -1,7 +1,5 @@
-
-
 module.exports = {
-    getHeader: function() {
+    getHeader: function () {
         return browser.findElement(By.xpath("//*[@id=\"pogoda\"]/h3"));
     },
 }

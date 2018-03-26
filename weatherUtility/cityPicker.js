@@ -1,14 +1,13 @@
-
 module.exports = {
-    bialystok: function() {
+    bialystok: function () {
         return browser.findElement(By.xpath("//*[@id=\"miasta\"]/ul/li[1]/a"));
     },
 
-    gdansk: function() {
+    gdansk: function () {
         return browser.findElement(By.xpath("//*[@id=\"miasta\"]/ul/li[4]/a"));
     },
 
-    kolobrzeg: function() {
+    kolobrzeg: function () {
         return browser.findElement(By.xpath("//*[@id=\"miasta\"]/ul/li[7]/a"));
     },
 
@@ -16,103 +15,103 @@ module.exports = {
         return browser.findElement(By.xpath("//*[@id=\"miasta\"]/ul/li[10]/a"));
     },
 
-    lodz: function() {
+    lodz: function () {
         return browser.findElement(By.xpath("//*[@id=\"miasta\"]/ul/li[13]/a"));
     },
 
-    opole: function() {
+    opole: function () {
         return browser.findElement(By.xpath("//*[@id=\"miasta\"]/ul/li[16]/a"));
     },
 
-    rzeszow: function() {
+    rzeszow: function () {
         return browser.findElement(By.xpath("//*[@id=\"miasta\"]/ul/li[19]/a"));
     },
 
-    szczecin: function() {
+    szczecin: function () {
         return browser.findElement(By.xpath("//*[@id=\"miasta\"]/ul/li[22]/a"));
     },
 
-    zakopane: function() {
+    zakopane: function () {
         return browser.findElement(By.xpath("//*[@id=\"miasta\"]/ul/li[28]/a"));
     },
 
-    bydgoszcz: function() {
+    bydgoszcz: function () {
         return browser.findElement(By.xpath("//*[@id=\"miasta\"]/ul/li[2]/a"));
     },
 
-    gorzow: function() {
+    gorzow: function () {
         return browser.findElement(By.xpath("//*[@id=\"miasta\"]/ul/li[5]/a"));
     },
 
-    katowice: function() {
+    katowice: function () {
         return browser.findElement(By.xpath("//*[@id=\"miasta\"]/ul/li[8]/a"));
     },
 
-    krakow: function() {
+    krakow: function () {
         return browser.findElement(By.xpath("//*[@id=\"miasta\"]/ul/li[11]/a"));
     },
 
-    lomza: function() {
+    lomza: function () {
         return browser.findElement(By.xpath("//*[@id=\"miasta\"]/ul/li[14]/a"));
     },
 
-    poznan: function() {
+    poznan: function () {
         return browser.findElement(By.xpath("//*[@id=\"miasta\"]/ul/li[17]/a"));
     },
 
-    slupsk: function() {
+    slupsk: function () {
         return browser.findElement(By.xpath("//*[@id=\"miasta\"]/ul/li[20]/a"));
     },
 
-    tarnow: function() {
+    tarnow: function () {
         return browser.findElement(By.xpath("//*[@id=\"miasta\"]/ul/li[23]/a"));
     },
 
-    wloclawek: function() {
+    wloclawek: function () {
         return browser.findElement(By.xpath("//*[@id=\"miasta\"]/ul/li[26]/a"));
     },
 
-    zamosc: function() {
+    zamosc: function () {
         return browser.findElement(By.xpath("//*[@id=\"miasta\"]/ul/li[29]/a"));
     },
 
-    czestochowa: function() {
+    czestochowa: function () {
         return browser.findElement(By.xpath("//*[@id=\"miasta\"]/ul/li[3]/a"));
     },
 
-    grudziac: function() {
+    grudziac: function () {
         return browser.findElement(By.xpath("//*[@id=\"miasta\"]/ul/li[6]/a"));
     },
 
-    kielce: function() {
+    kielce: function () {
         return browser.findElement(By.xpath("//*[@id=\"miasta\"]/ul/li[9]/a"));
     },
 
-    lublin: function() {
+    lublin: function () {
         return browser.findElement(By.xpath("//*[@id=\"miasta\"]/ul/li[12]/a"));
     },
 
-    olsztyn: function() {
+    olsztyn: function () {
         return browser.findElement(By.xpath("//*[@id=\"miasta\"]/ul/li[15]/a"));
     },
 
-    radom: function() {
+    radom: function () {
         return browser.findElement(By.xpath("//*[@id=\"miasta\"]/ul/li[18]/a"));
     },
 
-    suwalki: function() {
+    suwalki: function () {
         return browser.findElement(By.xpath("//*[@id=\"miasta\"]/ul/li[21]/a"));
     },
 
-    torun: function() {
+    torun: function () {
         return browser.findElement(By.xpath("//*[@id=\"miasta\"]/ul/li[24]/a"));
     },
 
-    wroclaw: function() {
+    wroclaw: function () {
         return browser.findElement(By.xpath("//*[@id=\"miasta\"]/ul/li[27]/a"));
     },
 
-    zielonaGora: function() {
+    zielonaGora: function () {
         return browser.findElement(By.xpath("//*[@id=\"miasta\"]/ul/li[30]/a"));
     }
 }
