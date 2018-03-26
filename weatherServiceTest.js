@@ -1,5 +1,5 @@
-const cityHeader = require('./weather/cityHeader');
-const cityPicker = require('./weather/cityPicker');
+const cityHeader = require('./weatherUtility/cityHeader');
+const cityPicker = require('./weatherUtility/cityPicker');
 const actions = require('./actions');
 
 describe('Weather', function() {
