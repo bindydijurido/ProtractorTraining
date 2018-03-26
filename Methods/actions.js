@@ -15,7 +15,6 @@ module.exports = {
     wrongPsswd: function () {
         return element(by.id('inputEmail')).sendKeys('mail@mail.com');
         element(by.id('inputPassword')).sendKeys('12345');
-
         element(by.className('btn btnLogin btnFullWidth')).click();
     },
 
