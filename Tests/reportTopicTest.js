@@ -16,6 +16,7 @@ describe('Report Topic', function () {
         workflow.goToReportTopic();
         workflow.reportTopicProperData();
 
-        expect(element(browser.findElement.By.xpath('//*[@id="page"]/div[1]/div/div/div/div[2]')).getText()).toBe('Wiadomość została wysłana do redakcji');
+        expect(element(browser.findElement.By.xpath('//*[@id="page"]/div[1]/div/div/div/div[2]')).getText())
+            .toBe('Wiadomość została wysłana do redakcji');
     })
 })

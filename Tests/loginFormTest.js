@@ -6,6 +6,7 @@ describe('Login Page', function () {
         workflow.goToLogin();
         workflow.wrongPsswd();
 
-        expect(element(by.className('alert alert-danger')).getText()).toBe('Niepoprawny e-mail lub hasło');
+        expect(element(by.className('alert alert-danger')).getText())
+            .toBe('Niepoprawny e-mail lub hasło');
     });
 });
