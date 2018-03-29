@@ -7,8 +7,8 @@ describe('Report Topic', function () {
         element(by.className('btn btnLogin btnFullWidth')).click();
 
         expect(element(by.className('alert alert-danger')).getText()).toBe('Wszystkie dane są obowiązkowe');
-    });
-});
+    })
+})
 
 describe('Report Topic', function () {
     it('with properly data', function () {
@@ -16,7 +16,6 @@ describe('Report Topic', function () {
         workflow.goToReportTopic();
         workflow.reportTopicProperData();
 
-        expect(element(browser.findElement.By.xpath('//*[@id="page"]/div[1]/div/div/div/div[2]')).getText())
-            .toBe('Wiadomość została wysłana do redakcji');
+        expect(messageAlertReportTopic.getText()).toBe('Wiadomość została wysłana do redakcji');
     })
 })

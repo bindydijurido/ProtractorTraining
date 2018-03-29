@@ -8,5 +8,5 @@ describe('Login Page', function () {
 
         expect(element(by.className('alert alert-danger')).getText())
             .toBe('Niepoprawny e-mail lub hasło');
-    });
-});
+    })
+})

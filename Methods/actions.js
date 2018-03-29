@@ -12,6 +12,17 @@ module.exports = {
         element(by.className('menuBtn menuIconBg r15 notifyBox avatarIcon')).click();
     },
 
+    goToSeachBar: function () {
+        return browser.waitForAngularEnabled(false);
+        browser.get('http://niezalezna.pl');
+        element(by.className('menuBtn menuIconBg searchIcon r5')).click();
+    },
+
+    searchWordInSearcBar: function (word) {
+        return element(by.className('searchInput')).sendKeys(word);
+        element(by.className('searchButton')).click();
+    },
+
     wrongPsswd: function () {
         return element(by.id('inputEmail')).sendKeys('mail@mail.com');
         element(by.id('inputPassword')).sendKeys('12345');
@@ -40,7 +51,6 @@ module.exports = {
 
     registerWittProperUserWithData: function (bool, mail, password, passwordAgain) {
         return
-
         if (bool == true) {
             element(by.className('email')).sendKeys(mail);
             element(by.className('password')).sendKeys(password);
