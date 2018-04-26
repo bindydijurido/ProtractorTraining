@@ -1,12 +1,16 @@
-const workflow = require('Methods/actions');
+const workflow = require('../Methods/actions');
+const elements = require('../Methods/pageElements');
 
 describe('Login Page', function () {
     it('with wrong login&psswd', function () {
 
-        workflow.goToLogin();
-        workflow.wrongPsswd();
+        workflow.openPage();
 
-        expect(element(by.className('alert alert-danger')).getText())
-            .toBe('Niepoprawny e-mail lub hasło');
+        expect(element(elements.loginBttn()).isPresent()).toBeTruthy();
+        element(elements.loginBttn()).click();
+
+        workflow.fillLoginForm('test@mail.com', 'start123');
+
+        expect(element(elements.alertMssg()).getText()).toBe('Niepoprawny e-mail lub hasło');
     })
 })
