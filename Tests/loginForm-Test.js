@@ -12,15 +12,3 @@ describe('Login Page', function () {
         expect(element(pageEl.alertMssg()).getText()).toBe('Niepoprawny e-mail lub hasło');
     })
 })
-
-describe('Login Page', function () {
-    it('with incomplete login and wrong pssw'), function () {
-
-        action.openPage();
-        element(pageEl.loginBttn()).click();
-
-        action.fillLoginForm('test@test', 'start123');
-
-        expect(element(pageEl.alertMssg()).getText().toBe('Wpisz poprawnie adres e-mail'));
-    }
-})
