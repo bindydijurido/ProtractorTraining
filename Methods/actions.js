@@ -12,4 +12,5 @@ module.exports = {
         element(pageEl.psswdForm()).sendKeys(psswdForm);
         element(pageEl.loginSubmit()).click();
     },
+
 }
