@@ -13,11 +13,14 @@ module.exports = {
         element(pageEl.loginSubmit()).click();
     },
 
-    fillRegisterForm: function(loginName, psswdForm, psswdForm2) {
+    fillRegisterForm: function(loginName, psswdForm, psswdForm2, checkbox) {
         element(pageEl.mailForm()).sendKeys(loginName);
         element(pageEl.psswdForm()).sendKeys(psswdForm);
         element(pageEl.psswdForm2()).sendKeys(psswdForm2);
-        element(pageEl.registrationCheckBox()).click();
+
+        if(checkbox == true) {
+            element(pageEl.registrationCheckBox()).click();
+        }
         element(pageEl.loginSubmit()).click();
     },
 
