@@ -1,22 +1,18 @@
-const workflow = require('../Methods/actions');
+const action = require('../Methods/actions');
+const pageEl = require('../Methods/pageElement');
 
 describe('Register user', function () {
-    it('with properly/wrong data', function () {
+    it('with random generated properly data', function () {
 
-        browser.waitForAngularEnabled(false);
-        browser.get('http://niezalezna.pl');
+        action.openPage();
 
-        workflow.goToUserRegistration();
+        element(pageEl.loginBttn()).click();
+        element(pageEl.registerBttn()).click();
 
-        workflow.registerWittProperUserWithData(true, "test@wp.pl", "start123", "start123");
+        action.fillRegisterForm(action.generateRandomMail(), 'start123', 'start123');
 
-        if (workflow.registerWittProperUserWithData(true)) {
-            expect(element(by.className('alert alert-success')).getText())
-                .toBe('Rejestracja przebiegła pomyślnie. Możesz teraz zalogować się na stronie');
-        } else {
-            expect(element(by.className('alert alert-danger')).getText())
-                .toBe('Rejestracja wymaga akceptacji regulaminu.');
-        }
+        browser.wait(protractor.ExpectedConditions.presenceOf(element(pageEl.alertSuccess())), 5000, 'Element taking too long to appear');
+        expect(element(pageEl.alertSuccess()).getText()).toBe('Rejestracja przebiegła pomyślnie. Możesz teraz zalogować się na stronie');
     })
 })
 
